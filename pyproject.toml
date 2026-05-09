@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dns-benchmark-tool"
-version = "1.0.0"
+version = "1.1.0"
 description = "deprecated — migrate to net-benchmark. see https://github.com/net-benchmark/net-benchmark"
 readme = { file = "README-pypi.md", content-type = "text/markdown" }
 authors = [
@@ -110,7 +110,7 @@ addopts = "-ra -q"
 
 [tool.commitizen]
 name = "cz_conventional_commits"
-version = "1.0.0"
+version = "1.1.0"
 tag_format = "v$version"
 version_files = [
     "pyproject.toml:version",
