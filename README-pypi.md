@@ -1,5 +1,11 @@
 <div align="center">
 
+> ⚠️ **deprecated.** this package is no longer maintained.
+> migrate to: `pip install net-benchmark`
+> https://github.com/net-benchmark/net-benchmark
+
+---
+
 # DNS Benchmark Tool
 
 **Fast, comprehensive DNS performance testing**

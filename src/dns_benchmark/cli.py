@@ -106,29 +106,20 @@ def _resolve_protocol_and_doh_urls(
 @click.version_option(__version__, prog_name="DNS Benchmark Tool")
 def cli() -> None:
     """
-    Buildtools - DNS Benchmark Tool - Measure and compare DNS resolver performance
+    deprecated — migrate to net-benchmark. https://github.com/net-benchmark/net-benchmark
     CLI entry point.
     """
     # Allow suppression of banner for CI/CD
     if not os.environ.get("NO_BANNER"):
         ascii_art = pyfiglet.figlet_format("DNS Benchmark")
         print(Fore.GREEN + ascii_art + Style.RESET_ALL)
+        print(Fore.YELLOW + "⚠️  dns-benchmark-tool is deprecated." + Style.RESET_ALL)
+        print(Fore.CYAN + "migrate to: pip install net-benchmark" + Style.RESET_ALL)
         print(
             Fore.CYAN
-            + "Part of BuildTools - Network Performance Suite"
+            + "https://github.com/net-benchmark/net-benchmark"
             + Style.RESET_ALL
         )
-        print(
-            Fore.YELLOW
-            + "🌐 buildtools.net | ⭐ 358 stars | 📦 1,400+ downloads"
-            + Style.RESET_ALL
-        )
-        print(
-            Fore.GREEN
-            + "🚀 Web dashboard now live — DNS benchmark + monitoring at buildtools.net"
-            + Style.RESET_ALL
-        )
-        print(Fore.BLUE + "💡 Multi-region testing coming Q3 2026" + Style.RESET_ALL)
         print()
 
 

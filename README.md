@@ -1,5 +1,12 @@
 <div align="center">
 
+> ⚠️ **this project has moved and is no longer maintained.**
+> install the successor: `pip install net-benchmark`
+> repository: https://github.com/net-benchmark/net-benchmark
+> all existing commands and flags remain fully compatible.
+
+---
+
 # DNS Benchmark Tool
 
 ## Part of [BuildTools](https://buildtools.net) - Network Performance Suite
