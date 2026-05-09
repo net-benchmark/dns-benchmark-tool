@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "dns-benchmark-tool"
 version = "1.0.0"
-description = "Fast, comprehensive DNS performance testing with DNSSEC validation, DoH/DoT support, and enterprise features."
+description = "deprecated — migrate to net-benchmark. see https://github.com/net-benchmark/net-benchmark"
 readme = { file = "README-pypi.md", content-type = "text/markdown" }
 authors = [
     { name = "Joseph Oseh Frank", email = "frank@osehfrank.com" }
@@ -15,6 +15,7 @@ requires-python = ">=3.9,<3.13"
 keywords = ["DNS", "benchmark", "performance", "DNSSEC", "DoH", "DoT", "networking", "latency", "resolver", "metrics"]
 
 dependencies = [
+    "net-benchmark",
     "dnspython>=2.7,<3.0",       
     "pandas>=2.0,<3.0",          
     "aiohttp>=3.8,<4.0",         
@@ -48,11 +49,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/frankovo/dns-benchmark-tool"
-Documentation = "https://github.com/frankovo/dns-benchmark-tool#readme"
-Source = "https://github.com/frankovo/dns-benchmark-tool"
-Tracker = "https://github.com/frankovo/dns-benchmark-tool/issues"
-Changelog = "https://github.com/frankovo/dns-benchmark-tool/blob/main/CHANGELOG.md"
+"Homepage" = "https://github.com/net-benchmark/net-benchmark"
+"Migrated To" = "https://github.com/net-benchmark/net-benchmark"
+"PyPI" = "https://pypi.org/project/net-benchmark"
 
 [project.optional-dependencies]
 pdf = ["weasyprint>=66.0,<67.0"]
