@@ -1,6 +1,6 @@
 import warnings
 
-__version__ = "1.1.2"
+__version__ = "1.1.3"
 
 warnings.warn(
     "dns-benchmark-tool is deprecated and no longer maintained. "
